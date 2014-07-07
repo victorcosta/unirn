@@ -4,6 +4,9 @@ function onDeviceReady() {
 	$('#alert').click(function(event) {
 		alert('teste!');
 	});
+	$('#goface').click(function(event) {
+		openFacebook();
+	});
 }
 function openFacebook() {	
 	window.open(encodeURI('http://facebook.com'), '_self', 'location=no');
