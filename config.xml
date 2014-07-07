@@ -1,16 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
-<widget xmlns     = "http://www.w3.org/ns/widgets"
-	xmlns:gap = "http://phonegap.com/ns/1.0"
-	id        = "com.phonegap.app-test"
-	version   = "1.0.0">
-
-	<name>UniRN App</name>
-
-	<author href="http://maxmeio.com" email="atemdimento@maxmeio.com">
-		Victor Costa
-	</author>
+<widget id="com.phonegap.unirnapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+    <name>UniRN App</name>
+    <description>
+        Hello World sample application that responds to the deviceready event.
+    </description>
+    <author email="atendimento@maxmeio.com" href="http://maxmeio.com">
+        Victor Costa
+    </author>
 	<preference name="phonegap-version" value="3.3.0" />
 	<icon gap:platform="android" gap:qualifier="ldpi" src="assets/img/res/icon/android/icon-36-ldpi.png" />
 	<icon gap:platform="android" gap:qualifier="mdpi" src="assets/img/res/icon/android/icon-48-mdpi.png" />
