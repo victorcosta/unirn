@@ -3,7 +3,6 @@
     // super.setIntegerProperty("splashscreen", R.drawable.splash);
     // super.loadUrl(Config.getStartUrl(), 10000);
 
-
     var pictureSource;   // picture source
     var destinationType; // sets the format of returned value
     var watchIDAcelerometer = null;
@@ -17,7 +16,6 @@
         pictureSource=navigator.camera.PictureSourceType;
         destinationType=navigator.camera.DestinationType;
         startWatch();
-
     }
 
     function startWatch() {
