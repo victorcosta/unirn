@@ -1,5 +1,5 @@
+document.addEventListener('deviceready', onDeviceReady, true);
 
-document.addEventListener("deviceready", onDeviceReady, false);
-function onDeviceReady() {
-	alert('opa');
+function onDeviceReady() {	
+	alert('opas!');
 }
