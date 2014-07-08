@@ -36,8 +36,8 @@
 	<gap:splash src="assets/img/screen/ios/screen-ipad-landscape.png"       gap:platform="ios"          width="1024" height="768" />
 	<gap:splash src="assets/img/screen/windows-phone/screen-portrait.jpg"   gap:platform="winphone"                               />
 	<plugin name="InAppBrowser" value="CDVInAppBrowser" />
-	<!-- <gap:plugin name="org.apache.cordova.core.vibration" /> -->
 	<gap:plugin name="org.apache.cordova.vibration" version="0.3.7" />
-	
+	<plugin name="Notification" value="org.apache.cordova.Notification"/>
+		
 	<access origin="*" />
 </widget>
