@@ -11,13 +11,10 @@ function onDeviceReady() {
 		navigator.notification.vibrate(1000);
 	});
 	$('#beep').click(function(event) {
-		navigator.notification.beep(2);   
+		navigator.notification.beep(3);   
 	});
 
 }
 function openFacebook() {	
 	window.open(encodeURI('http://facebook.com'), '_self', 'location=no');
 }
-function alertDismissed() {
-        // do something
-    }
