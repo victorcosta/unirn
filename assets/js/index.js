@@ -1,11 +1,18 @@
 document.addEventListener('deviceready', onDeviceReady, true);
 
 function onDeviceReady() {	
-	$('#alert').click(function(event) {
-		alert('teste!');
-	});
 	$('#goface').click(function(event) {
 		openFacebook();
+	});
+	$('#alert').click(function(event) {
+		showAlert();
+		//alert('teste!');
+	});
+	$('#vibrate').click(function(event) {
+		vibrate();
+	});
+	$('#beep').click(function(event) {
+		playBeep();
 	});
 
 }
