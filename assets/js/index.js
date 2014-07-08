@@ -4,15 +4,14 @@ function onDeviceReady() {
 	$('#goface').click(function(event) {
 		openFacebook();
 	});
-	navigator.notification.vibrate(1000);
-	navigator.notification.alert("Hello");
-	navigator.notification.beep(1);   
+	// navigator.notification.alert("Hello");
+	// navigator.notification.beep(1);   
 	// $('#alert').click(function(event) {
 	// 	alert('.');
 	// });
-	// $('#vibrate').click(function(event) {
-	// 	alert('.');
-	// });
+	$('#vibrate').click(function(event) {
+		navigator.notification.vibrate(1000);
+	});
 	// $('#beep').click(function(event) {
 	// 	alert('.');
 	// });
