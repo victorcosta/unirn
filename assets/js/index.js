@@ -4,23 +4,18 @@ function onDeviceReady() {
 	$('#goface').click(function(event) {
 		openFacebook();
 	});
-	$('#alert').click(function(event) {
-		// navigator.notification.alert(
-  //           'You are the winner!',  // message
-  //           alertDismissed,         // callback
-  //           'Game Over',            // title
-  //           'Done'                  // buttonName
-  //           );
-		alert('.');
-	});
-	$('#vibrate').click(function(event) {
-		// navigator.notification.vibrate(2000);
-		alert('.');
-	});
-	$('#beep').click(function(event) {
-		// navigator.notification.beep(3);
-		alert('.');
-	});
+	navigator.notification.vibrate(1000);
+	navigator.notification.alert("Hello");
+	navigator.notification.beep(1);   
+	// $('#alert').click(function(event) {
+	// 	alert('.');
+	// });
+	// $('#vibrate').click(function(event) {
+	// 	alert('.');
+	// });
+	// $('#beep').click(function(event) {
+	// 	alert('.');
+	// });
 
 }
 function openFacebook() {	
