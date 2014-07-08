@@ -4,17 +4,15 @@ function onDeviceReady() {
 	$('#goface').click(function(event) {
 		openFacebook();
 	});
-	// navigator.notification.alert("Hello");
-	// navigator.notification.beep(1);   
-	// $('#alert').click(function(event) {
-	// 	alert('.');
-	// });
+	$('#alert').click(function(event) {
+		navigator.notification.alert("Hello");
+	});
 	$('#vibrate').click(function(event) {
 		navigator.notification.vibrate(1000);
 	});
-	// $('#beep').click(function(event) {
-	// 	alert('.');
-	// });
+	$('#beep').click(function(event) {
+		navigator.notification.beep(2);   
+	});
 
 }
 function openFacebook() {	
