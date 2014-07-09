@@ -13,8 +13,8 @@ function onDeviceReady() {
 	$('#beep').click(function(event) {
 		navigator.notification.beep(3);   
 	});
-	$('#beep').click(function(event) {
-		navigator.notification.beep(3);   
+	$('#all').click(function(event) {
+		navigator.notification.beep(1);   
 		navigator.notification.vibrate(2000);
 		navigator.notification.alert("Hello",null,"hahahahA",'i`m fine');
 	});
