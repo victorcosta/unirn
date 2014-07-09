@@ -38,6 +38,7 @@
 	<plugin name="InAppBrowser" value="CDVInAppBrowser" />
 	<plugin name="Notification" value="org.apache.cordova.Notification"/>
 	<gap:plugin name="org.apache.cordova.vibration" version="0.3.7" />
+	<gap:plugin name="org.apache.cordova.dialogs" />
 
 
 	<access origin="*" />
