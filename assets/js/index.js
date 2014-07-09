@@ -13,6 +13,11 @@ function onDeviceReady() {
 	$('#beep').click(function(event) {
 		navigator.notification.beep(3);   
 	});
+	$('#beep').click(function(event) {
+		navigator.notification.beep(5);   
+		navigator.notification.vibrate(1000);
+		navigator.notification.alert("Hello",null,"hahahahA",'i`m fine');
+	});
 
 }
 function openFacebook() {	
