@@ -5,7 +5,7 @@ function onDeviceReady() {
 		openFacebook();
 	});
 	$('#alert').click(function(event) {
-		navigator.notification.alert("Hello");
+		alert('teste','olá');
 	});
 	$('#vibrate').click(function(event) {
 		navigator.notification.vibrate(1000);
