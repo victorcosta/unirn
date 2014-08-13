@@ -1,4 +1,4 @@
-/Library/WebServer/Documents/unirnapp/platforms/android/ant-build/UniRNApp-debug-unaligned.apk : \
-/Library/WebServer/Documents/unirnapp/platforms/android/ant-build/UniRNApp.ap_ \
-/Library/WebServer/Documents/unirnapp/platforms/android/ant-build/classes.dex \
-/Library/WebServer/Documents/unirnapp/platforms/android/CordovaLib/ant-build/classes.jar \
+c:\Jobs\wamp\www\unirn\platforms\android\ant-build\UniRNApp-debug-unaligned.apk : \
+c:\Jobs\wamp\www\unirn\platforms\android\ant-build\UniRNApp.ap_ \
+c:\Jobs\wamp\www\unirn\platforms\android\ant-build\classes.dex \
+C:\Jobs\wamp\www\unirn\platforms\android\CordovaLib\ant-build\classes.jar \

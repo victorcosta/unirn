@@ -1,2 +1,2 @@
-/Library/WebServer/Documents/unirnapp/platforms/android/ant-build/AndroidManifest.xml : \
-/Library/WebServer/Documents/unirnapp/platforms/android/AndroidManifest.xml \
+c:\Jobs\wamp\www\unirn\platforms\android\ant-build\AndroidManifest.xml : \
+c:\Jobs\wamp\www\unirn\platforms\android\AndroidManifest.xml \

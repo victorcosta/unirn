@@ -1,9 +1,106 @@
-.ui-header {
-  background: #cccccc; }
+@font-face{
+    font-family:'MissionGothic400';
+    src:url("../fonts/Mission_Gothic_Regular.woff");
+}
+@font-face{
+    font-family:'MissionGothic300';
+    src:url("../fonts/Mission_Gothic_Light.woff");
+}
 
+.ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper{
+	background: url("../img/bg.jpg");
+	background-position: center center;
+}
+.ui-header {
+    background: url("../img/bg-header.jpg");
+    height: 5em;
+}
+.ui-header h1{
+	font-family:'MissionGothic300', sans-serif;
+	font-size: 2em !important;
+	color: #fff;
+	font-weight: 400 !important;
+	white-space: normal !important;
+	text-shadow: none !important;
+}
 .ui-footer {
   background: #cccccc; }
-
+.ui-page-theme-a{
+	background-color: transparent !important;
+}
+.ui-header .ui-btn{
+	background-color: transparent !important;
+	background-image: none !important;
+	border-color: #fff !important;
+	font-size: 2em;
+}
+.ui-btn-icon-notext:after{
+	background-color: transparent !important;
+	border-color: #fff  !important;
+}
+.ui-header .ui-btn-icon-notext{
+	font-size: 1em !important;
+	margin-top: 3% !important;
+	margin-left: 2% !important;
+	border: 1px solid #fff !important;
+}
+.ui-panel-wrapper {
+	float: left;
+	width: 100%;
+}
+.logo{
+	width: 100%;
+	text-align: center;
+	float: left;
+	margin-top: 3em;
+}
+.ui-content p {
+	font-family: 'MissionGothic300', sans-serif;
+	font-size: 2em !important;
+	color: #fff;
+	font-weight: 400 !important;
+	white-space: normal !important;
+	text-shadow: none !important;
+	text-align: center;
+	width: 80%;
+	margin-left: 10%;
+	margin-top: 2em;
+	float: left;
+}
+.divisor{
+	width: 76%;
+	height: 2px;
+	margin-left: 12%;
+	float: left;
+	background-image: url("../img/divisor.jpg");
+	margin-top: 1em;
+	margin-bottom: 1em;
+}
+.ui-btn{
+	width: 73%;
+	float: left;
+	font-family: 'MissionGothic300' !important;
+	border-color: transparent !important;
+	border: none !important;
+	background-color: #3a3669 !important;
+	border-radius: 50px;
+	margin-left: 10% !important;
+	font-size: 1.8em !important;
+	color: #fff !important;
+	text-shadow: none !important;
+	font-weight: 300 !important;
+	letter-spacing: 1.2px;
+}
+.academicas{
+	background-image: url("../img/academicas.jpg");
+	background-position: 2%;
+	background-repeat: no-repeat;
+}
+.financeiras{
+	background-image: url("../img/financeiras.jpg");
+	background-position: 2%;
+	background-repeat: no-repeat;
+}
 #maps {
   width: 100%;
 }
@@ -17,4 +114,40 @@
 	border-width: 0 30px 60px 30px;
 	border-color: transparent transparent #007bff transparent;
 }
-
+/* First breakpoint at 576px */	
+/* Inherits mobile styles, but floats containers to make columns */	
+@media all and (max-width: 36em){
+	.ui-header h1{
+		font-size: 1.2em !important;
+	}
+	.ui-header {
+    height: 3em;
+	}
+	.ui-header .ui-btn-icon-notext {
+		margin-top: 2% !important;
+	}
+	.logo {
+		margin-top: 1em;
+	}
+	.ui-content p {
+		font-size: 1.2em !important;
+		width: 100%;
+		margin-left: 0;
+		margin-top: 1em;
+		margin-bottom: 0px;
+	}
+	.divisor {
+		width: 100%;
+		height: 2px;
+		margin-left: 0%;
+	}
+	.ui-content .ui-btn {
+		width: 100%;
+		padding: 0.3em !important;
+		padding-left: 0px !important;
+		padding-right: 0px !important;
+		background-size: 1.5em;
+		font-size: 1.0em !important;
+		margin-left: 0px !important;
+	}
+}

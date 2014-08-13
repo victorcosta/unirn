@@ -1,2 +1,2 @@
-/Library/WebServer/Documents/unirnapp/platforms/android/CordovaLib/ant-build/AndroidManifest.xml : \
-/Library/WebServer/Documents/unirnapp/platforms/android/CordovaLib/AndroidManifest.xml \
+C:\Jobs\wamp\www\unirn\platforms\android\CordovaLib\ant-build\AndroidManifest.xml : \
+C:\Jobs\wamp\www\unirn\platforms\android\CordovaLib\AndroidManifest.xml \
