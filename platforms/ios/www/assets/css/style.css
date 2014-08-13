@@ -1,0 +1,20 @@
+.ui-header {
+  background: #cccccc; }
+
+.ui-footer {
+  background: #cccccc; }
+
+#maps {
+  width: 100%;
+}
+#block{
+	width:80px; height: 80px; background:red;
+}
+#triangle{
+	width: 0px;
+	height: 0px;
+	border-style: solid;
+	border-width: 0 30px 60px 30px;
+	border-color: transparent transparent #007bff transparent;
+}
+
