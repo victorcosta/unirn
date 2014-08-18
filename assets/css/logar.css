@@ -1,0 +1,52 @@
+#logar input{
+	width: 79%;
+	float: left;
+	font-family: 'MissionGothic300' !important;
+	border-color: transparent !important;
+	border: none !important;
+	background-color: #fff !important;
+	border-radius: 50px;
+	margin-left: 10% !important;
+	font-size: 1.8em !important;
+	color: #3a3669 !important;
+	text-shadow: none !important;
+	font-weight: 300 !important;
+	letter-spacing: 1.2px;
+}
+.ui-page-theme-a .ui-body-inherit{
+	border: none !important;
+}
+.logo {
+	margin-bottom: 0em;
+}
+..ui-content p{
+	margin-top: 1em;
+	width: 100%;
+	margin-left: 0em !important;
+}
+.divisor{
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+#logar .button{
+	width: 79%;
+	float: left;
+	font-family: 'MissionGothic300' !important;
+	border-color: transparent !important;
+	border: none !important;
+	background-color: #3a3669 !important;
+	border-radius: 50px;
+	margin-left: 10% !important;
+	font-size: 1.8em !important;
+	color: #fff !important;
+	text-shadow: none !important;
+	font-weight: 300 !important;
+	letter-spacing: 1.2px;
+}
+#logar:-moz-placeholder {color: #3a3669  !important;}
+
+#logar::-moz-placeholder {color: #3a3669  !important;}
+
+#logar:-ms-input-placeholder {color: #3a3669  !important;}
+
+#logar::-webkit-input-placeholder {color: #3a3669  !important;}

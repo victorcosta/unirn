@@ -53,7 +53,8 @@
 	width: 100%;
 	text-align: center;
 	float: left;
-	margin-top: 3em;
+	margin-bottom: 10em;
+	margin-top: 8em;
 }
 .ui-content p {
 	font-family: 'MissionGothic300', sans-serif;
@@ -92,6 +93,10 @@
 	font-weight: 300 !important;
 	letter-spacing: 1.2px;
 }
+.ui-btn.branco{
+	background-color: #fff !important;
+	color: #3a3669 !important;
+}
 .academicas{
 	background-image: url("../img/academicas.jpg");
 	background-position: 2%;
@@ -100,6 +105,16 @@
 .financeiras{
 	background-image: url("../img/financeiras.jpg");
 	background-position: 2%;
+	background-repeat: no-repeat;
+}
+.cadeado{
+	background-image: url("../img/cadeado.jpg");
+	background-position: 3% 35%;
+	background-repeat: no-repeat;
+}
+.lapis{
+	background-image: url("../img/lapis.jpg");
+	background-position: 3%;
 	background-repeat: no-repeat;
 }
 #maps {
@@ -155,4 +170,76 @@
 		font-size: 1.0em !important;
 		margin-left: 0px !important;
 	}
+}
+
+/************************ LOGAR ********************/
+
+#logar input{
+	width: 79%;
+	float: left;
+	font-family: 'MissionGothic300' !important;
+	border-color: transparent !important;
+	border: none !important;
+	background-color: #fff !important;
+	border-radius: 50px;
+	margin-left: 10% !important;
+	font-size: 1.8em !important;
+	color: #3a3669 !important;
+	text-shadow: none !important;
+	font-weight: 300 !important;
+	letter-spacing: 1.2px;
+	text-indent: 75px;
+	background-image: url("../img/cadeado.jpg");
+	background-position: 3% 35%;
+	background-repeat: no-repeat;
+}
+.ui-page-theme-a .ui-body-inherit{
+	border: none !important;
+}
+#logar .logo {
+	margin-bottom: 0em;
+}
+#logar .ui-content p{
+	margin-top: 1em;
+	width: 100%;
+	margin-left: 0em !important;
+}
+#logar .divisor{
+	margin-top: 2em;
+	margin-bottom: 2em;
+}
+#logar button{
+	width: 79%;
+	float: left;
+	font-family: 'MissionGothic300' !important;
+	border-color: transparent !important;
+	border: none !important;
+	background-color: #3a3669 !important;
+	border-radius: 50px;
+	margin-left: 10% !important;
+	font-size: 1.8em !important;
+	color: #fff !important;
+	text-shadow: none !important;
+	font-weight: 300 !important;
+	letter-spacing: 1.2px;
+}
+
+input::-webkit-input-placeholder { /* WebKit browsers */
+  color: #3a3669  !important;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+  color: #3a3669  !important;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+  color: #3a3669  !important;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+  color: #3a3669  !important;
+}
+
+/************************ LOGADO ********************/
+
+#logado .logo{
+	margin-bottom: 10em;
+	margin-top: 3em;
 }
