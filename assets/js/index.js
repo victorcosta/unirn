@@ -22,7 +22,7 @@ function onDeviceReady() {
 	$("#form_login").submit(function(event) {
 		var matricula 	= $('#matricula').val();
 		var cpf 		= $('#cpf').val();
-		window.open(encodeURI('http://www.unirn.edu.br/2013/?matricula='+matricula+'&cpf='+cpf), '_self', 'location=no');
+		window.open(encodeURI('http://projetos.maxmeio.com/unirn_app/?matricula='+matricula+'&cpf='+cpf), '_self', 'location=no');
 	});
 
 }
