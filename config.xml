@@ -4,7 +4,7 @@
 <widget id="com.phonegap.unirnapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
 	<name>UniRN App</name>
 	<description>
-		Hello World sample application that responds to the deviceready event.
+		Aplicativo Oficial da UniRN, por meio deste aplicativo o usuário pode obter informações sobre sua situação acadêmica e financeira, informações sobre cursos entre outras informações.
 	</description>
 	<author email="atendimento@maxmeio.com" href="http://maxmeio.com">
 		Victor Costa
