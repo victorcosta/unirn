@@ -22,8 +22,7 @@ function onDeviceReady() {
 	$("#form_login").submit(function(event) {
 		var matricula 	= $('#matricula').val();
 		var cpf 		= $('#cpf').val();
-		navigator.notification.alert(matricula+' '+cpf);
-		window.open(encodeURI('http://www.unirn.edu.br/2013/'), '_self', 'location=no');
+		window.open(encodeURI('http://www.unirn.edu.br/2013/?matricula='+matricula+'&cpf='+cpf), '_self', 'location=no');
 	});
 
 }
