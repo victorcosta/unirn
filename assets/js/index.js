@@ -22,7 +22,8 @@ function onDeviceReady() {
 	$("#btn-acessar").click(function(event) {
 		var matricula 	= $('#matricula').val();
 		var cpf 		= $('#cpf').val();
-		window.open(encodeURI('http://projetos.maxmeio.com/unirn_app/?matricula='+matricula+'&cpf='+cpf), '_self', 'location=no');
+		// window.open(encodeURI('http://projetos.maxmeio.com/unirn_app/?matricula='+matricula+'&cpf='+cpf), '_self', 'location=no');
+		$.mobile.changePage(encodeURI('http://projetos.maxmeio.com/unirn_app/?matricula='+matricula+'&cpf='+cpf));
 	});
 
 }
