@@ -19,8 +19,8 @@ function onDeviceReady() {
 	$("#btn-acessar").click(function(event) {
 		var matricula 	= $('#matricula').val();
 		var cpf 		= $('#cpf').val();
-		if (matricula == '' && cpf == '') {
-			navigator.notification.alert("Alerta",null,"hahahahA",'i`m fine');
+		if (matricula == '' || cpf == '') {
+			navigator.notification.alert("Digite a matrícula e o CPF",null,"Alerta",'OK!');
 		}else{
 			window.open(encodeURI('http://projetos.maxmeio.com/unirn_app/?matricula='+matricula+'&cpf='+cpf), '_self', 'location=no');
 		};
