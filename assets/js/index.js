@@ -1,10 +1,6 @@
 document.addEventListener('deviceready', onDeviceReady, true);
 
 function onDeviceReady() {
-	//$.mobile.hidePageLoadingMsg();
-	// $('#goface').click(function(event) {
-	// 	openFacebook();
-	// });
 	// $('#alert').click(function(event) {
 	// 	navigator.notification.alert("Hello");
 	// });
@@ -23,11 +19,11 @@ function onDeviceReady() {
 	$("#btn-acessar").click(function(event) {
 		var matricula 	= $('#matricula').val();
 		var cpf 		= $('#cpf').val();
-		window.open(encodeURI('http://projetos.maxmeio.com/unirn_app/?matricula='+matricula+'&cpf='+cpf), '_self', 'location=no');
-		// $.mobile.changePage(encodeURI('http://projetos.maxmeio.com/unirn_app/?matricula='+matricula+'&cpf='+cpf));
+		if (matricula == '' && cpf == '') {
+			navigator.notification.alert("Alerta",null,"hahahahA",'i`m fine');
+		}else{
+			window.open(encodeURI('http://projetos.maxmeio.com/unirn_app/?matricula='+matricula+'&cpf='+cpf), '_self', 'location=no');
+		};
 	});
 
-}
-function openFacebook() {
-	window.open(encodeURI('http://www.unirn.edu.br/2013/'), '_self', 'location=no');
 }
