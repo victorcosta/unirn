@@ -1,7 +1,7 @@
 document.addEventListener('deviceready', onDeviceReady, true);
 
 function onDeviceReady() {
-	$.mobile.hidePageLoadingMsg();
+	//$.mobile.hidePageLoadingMsg();
 	// $('#goface').click(function(event) {
 	// 	openFacebook();
 	// });
