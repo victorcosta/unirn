@@ -15,14 +15,12 @@
 	<icon gap:platform="android" gap:qualifier="mdpi" src="assets/img/icon/android/icon-48-mdpi.png" />
 	<icon gap:platform="android" gap:qualifier="hdpi" src="assets/img/icon/android/icon-72-hdpi.png" />
 	<icon gap:platform="android" gap:qualifier="xhdpi" src="assets/img/icon/android/icon-96-xhdpi.png" />
-	<icon gap:platform="blackberry" src="assets/img/icon/blackberry/icon-80.png" />
-	<icon gap:platform="blackberry" gap:state="hover" src="assets/img/icon/blackberry/icon-80.png" />
 	<icon gap:platform="ios" height="57" src="assets/img/icon/ios/icon-57.png" width="57" />
 	<icon gap:platform="ios" height="72" src="assets/img/icon/ios/icon-72.png" width="72" />
 	<icon gap:platform="ios" height="114" src="assets/img/icon/ios/icon-57-2x.png" width="114" />
 	<icon gap:platform="ios" height="144" src="assets/img/icon/ios/icon-72-2x.png" width="144" />
 	<icon gap:platform="webos" src="assets/img/icon/webos/icon-64.png" />
-	<icon gap:platform="winphone" src="assets/img/icon/windows-phone/icon-48.png" />
+	<icon gap:platform="winphone" src="assets/img/icon/android/icon-48-mdpi.png" />
 	<icon gap:platform="winphone" gap:role="background" src="assets/img/icon/windows-phone/icon-173.png" />
 
 	<!-- Define app splash screen for each platform. -->
@@ -30,7 +28,6 @@
 	<gap:splash src="assets/img/screen/android/screen-mdpi-portrait.png"    gap:platform="android"      gap:density="mdpi"        />
 	<gap:splash src="assets/img/screen/android/screen-hdpi-portrait.png"    gap:platform="android"      gap:density="hdpi"        />
 	<gap:splash src="assets/img/screen/android/screen-xhdpi-portrait.png"   gap:platform="android"      gap:density="xhdpi"       />
-	<gap:splash src="assets/img/screen/blackberry/screen-225.png"           gap:platform="blackberry"                             />
 	<gap:splash src="assets/img/screen/ios/screen-iphone-portrait.png"      gap:platform="ios"          width="320" height="480"  />
 	<gap:splash src="assets/img/screen/ios/screen-iphone-portrait-2x.png"   gap:platform="ios"          width="640" height="960"  />
 	<gap:splash src="assets/img/screen/ios/screen-ipad-portrait.png"        gap:platform="ios"          width="768" height="1024" />
