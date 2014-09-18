@@ -8,14 +8,13 @@ function onDeviceReady() {
 			navigator.notification.vibrate(100);
 			navigator.notification.alert("Digite a matrícula e o CPF",null,"Alerta",'OK!');
 		}else{
+			var ref = checkConnection();
+			if (ref == 0) {
+				navigator.notification.vibrate(100);
+			};
 			var ref = window.open(encodeURI('http://projetos.maxmeio.com/unirn_app/?matricula='+matricula+'&cpf='+cpf), '_self', 'location=no');
 		};
 	});
-	var ref = checkConnection();
-
-	if (ref == 0) {
-		navigator.notification.vibrate(100);
-	};
 }
 
 function checkConnection() {
