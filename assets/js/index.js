@@ -1,21 +1,6 @@
 document.addEventListener('deviceready', onDeviceReady, true);
 
 function onDeviceReady() {
-
-	var networkState = navigator.connection.type;
-	// if (networkState == 'Connection.NONE') {
-	navigator.notification.alert(networkState,null,"Alerta",'OK!');
-	if (networkState != 'Connection.WIFI') {
-		navigator.notification.vibrate(100);
-		navigator.notification.alert("Você está sem conexão com a rede",null,"Alerta",'OK!');
-
-		if (navigator.app) {
-           navigator.app.exitApp();
-        }
-        else if (navigator.device) {
-            navigator.device.exitApp();
-        }
-	};
 	// $('#alert').click(function(event) {
 	// 	navigator.notification.alert("Hello");
 	// });
@@ -32,14 +17,36 @@ function onDeviceReady() {
 	// });
 
 	$("#btn-acessar").click(function(event) {
-		var matricula 	= $('#matricula').val();
-		var cpf 		= $('#cpf').val();
-		if (matricula == '' || cpf == '') {
-			navigator.notification.vibrate(100);
-			navigator.notification.alert("Digite a matrícula e o CPF",null,"Alerta",'OK!');
-		}else{
-			var ref = window.open(encodeURI('http://projetos.maxmeio.com/unirn_app/?matricula='+matricula+'&cpf='+cpf), '_self', 'location=no');
-		};
+		var networkState = navigator.connection.type;
+		alert(networkState);
+		// var matricula 	= $('#matricula').val();
+		// var cpf 		= $('#cpf').val();
+		// if (matricula == '' || cpf == '') {
+		// 	navigator.notification.vibrate(100);
+		// 	navigator.notification.alert("Digite a matrícula e o CPF",null,"Alerta",'OK!');
+		// }else{
+		// 	var ref = window.open(encodeURI('http://projetos.maxmeio.com/unirn_app/?matricula='+matricula+'&cpf='+cpf), '_self', 'location=no');
+		// };
 	});
 
+	// checaConexao();
+
+
+}
+
+function checaConexao(){
+	var networkState = navigator.connection.type;
+	// if (networkState == 'Connection.NONE') {
+	navigator.notification.alert(networkState,null,"Alerta",'OK!');
+	if (networkState != 'Connection.WIFI') {
+		navigator.notification.vibrate(100);
+		navigator.notification.alert("Você está sem conexão com a rede",null,"Alerta",'OK!');
+
+		if (navigator.app) {
+           navigator.app.exitApp();
+        }
+        else if (navigator.device) {
+            navigator.device.exitApp();
+        }
+	};
 }
