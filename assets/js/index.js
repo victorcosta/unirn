@@ -1,6 +1,20 @@
 document.addEventListener('deviceready', onDeviceReady, true);
 
 function onDeviceReady() {
+
+	var networkState = navigator.connection.type;
+	// if (networkState == 'Connection.NONE') {
+	if (networkState != 'Connection.WIFI') {
+		navigator.notification.vibrate(100);
+		navigator.notification.alert("Você está sem conexão com a rede",null,"Alerta",'OK!');
+
+		if (navigator.app) {
+           navigator.app.exitApp();
+        }
+        else if (navigator.device) {
+            navigator.device.exitApp();
+        }
+	};
 	// $('#alert').click(function(event) {
 	// 	navigator.notification.alert("Hello");
 	// });
