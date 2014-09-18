@@ -4,6 +4,7 @@ function onDeviceReady() {
 
 	var networkState = navigator.connection.type;
 	// if (networkState == 'Connection.NONE') {
+	navigator.notification.alert(networkState,null,"Alerta",'OK!');
 	if (networkState != 'Connection.WIFI') {
 		navigator.notification.vibrate(100);
 		navigator.notification.alert("Você está sem conexão com a rede",null,"Alerta",'OK!');
