@@ -8,32 +8,10 @@ function onDeviceReady() {
 			navigator.notification.vibrate(100);
 			navigator.notification.alert("Digite a matrícula e o CPF",null,"Alerta",'OK!');
 		}else{
-			var ref = checkConnection();
-			if (ref == 0) {
-				navigator.notification.vibrate(100);
-			};
 			var ref = window.open(encodeURI('http://projetos.maxmeio.com/unirn_app/?matricula='+matricula+'&cpf='+cpf), '_self', 'location=no');
 		};
 	});
 }
-
-function checkConnection() {
-		var networkState = navigator.connection.type;
-
-		var states = {};
-		states[Connection.UNKNOWN]  = 'Conexão desconhecida';
-		states[Connection.ETHERNET] = 'Conexão Ethernet';
-		states[Connection.WIFI]     = 0;
-		// states[Connection.WIFI]     = 'Você está Conectado pelo WiFi';
-		states[Connection.CELL_2G]  = 'Você está Conectado pelo 2G';
-		states[Connection.CELL_3G]  = 'Você está Conectado pelo 3G';
-		states[Connection.CELL_4G]  = 'Você está Conectado pelo 4G';
-		states[Connection.CELL]     = 'Você está Conectado por uma conexão de celular';
-		states[Connection.NONE]     = 0;
-
-		return states[networkState];
-
-	}
 
 // function checaConexao(){
 // 	var networkState = navigator.connection.type;
