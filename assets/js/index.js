@@ -1,4 +1,5 @@
 document.addEventListener('deviceready', onDeviceReady, true);
+document.addEventListener("offline", onOffLine, false);
 
 function onDeviceReady() {
 	$("#btn-acessar").click(function(event) {
@@ -13,6 +14,15 @@ function onDeviceReady() {
 	});
 }
 
+function onOffLine() {
+	navigator.notification.alert("Você está sem conexão com internet",null,"Alerta",'OK!');
+	navigator.notification.vibrate(100);
+	if (navigator.app) {
+		navigator.app.exitApp();
+	}else if (navigator.device) {
+		navigator.device.exitApp();
+	}
+}
 // function checaConexao(){
 // 	var networkState = navigator.connection.type;
 // 	// if (networkState == 'Connection.NONE') {
