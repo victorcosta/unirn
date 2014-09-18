@@ -12,6 +12,10 @@ function onDeviceReady() {
 		};
 	});
 	var ref = checkConnection();
+
+	if (ref == 0) {
+		navigator.notification.vibrate(100);
+	};
 }
 
 function checkConnection() {
@@ -20,7 +24,8 @@ function checkConnection() {
 		var states = {};
 		states[Connection.UNKNOWN]  = 'Conexão desconhecida';
 		states[Connection.ETHERNET] = 'Conexão Ethernet';
-		states[Connection.WIFI]     = 'Você está Conectado pelo WiFi';
+		states[Connection.WIFI]     = 0;
+		// states[Connection.WIFI]     = 'Você está Conectado pelo WiFi';
 		states[Connection.CELL_2G]  = 'Você está Conectado pelo 2G';
 		states[Connection.CELL_3G]  = 'Você está Conectado pelo 3G';
 		states[Connection.CELL_4G]  = 'Você está Conectado pelo 4G';
