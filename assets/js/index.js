@@ -9,12 +9,14 @@ function onDeviceReady() {
 			navigator.notification.vibrate(100);
 			navigator.notification.alert("Digite a matrícula e o CPF",null,"Alerta",'OK!');
 		}else{
+			window.localStorage.setItem('cpf'.cpf);
+			window.localStorage.setItem('matricula',matricula);
 			var ref = window.open(encodeURI('http://projetos.maxmeio.com/unirn_app/?matricula='+matricula+'&cpf='+cpf), '_self', 'location=no');
 		};
 	});
 	checkConection();
+	getForm();
 }
-
 function onOffLine() {
 	navigator.notification.vibrate(100);
 	navigator.notification.alert("Você está sem conexão com internet",closeApp,"Alerta",'OK!');
@@ -25,6 +27,15 @@ function closeApp(){
 	}else if (navigator.device) {
 		navigator.device.exitApp();
 	}
+}
+
+function getForm(){
+	var cpf 		= window.localStorage.getItem('cpf');
+	var matricula 	= window.localStorage.getItem('matricula');
+	if (cpf && matricula) {
+		$('#matricula').val(matricula);
+		$('#cpf').val(cpf);
+	};
 }
 
 // function checaConexao(){
