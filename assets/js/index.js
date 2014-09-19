@@ -16,16 +16,17 @@ function onDeviceReady() {
 }
 
 function onOffLine() {
-	navigator.notification.alert("Você está sem conexão com internet",null,"Alerta",'OK!');
 	navigator.notification.vibrate(100);
-	setTimeout(function(){
-		if (navigator.app) {
-			navigator.app.exitApp();
-		}else if (navigator.device) {
-			navigator.device.exitApp();
-		}
-	}, 2000);
+	navigator.notification.alert("Você está sem conexão com internet",closeApp,"Alerta",'OK!');
 }
+function closeApp(){
+	if (navigator.app) {
+		navigator.app.exitApp();
+	}else if (navigator.device) {
+		navigator.device.exitApp();
+	}
+}
+
 // function checaConexao(){
 // 	var networkState = navigator.connection.type;
 // 	// if (networkState == 'Connection.NONE') {
