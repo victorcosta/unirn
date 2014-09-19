@@ -1,5 +1,5 @@
 document.addEventListener('deviceready', onDeviceReady, true);
-document.addEventListener("offline", onOffLine, false);
+// document.addEventListener("offline", onOffLine, false);
 
 function onDeviceReady() {
 	$("#btn-acessar").click(function(event) {
@@ -12,15 +12,19 @@ function onDeviceReady() {
 			var ref = window.open(encodeURI('http://projetos.maxmeio.com/unirn_app/?matricula='+matricula+'&cpf='+cpf), '_self', 'location=no');
 		};
 	});
+	checkConection();
 }
 
-function onOffLine() {
-	navigator.notification.alert("Você está sem conexão com internet",null,"Alerta",'OK!');
-	navigator.notification.vibrate(100);
-	if (navigator.app) {
-		navigator.app.exitApp();
-	}else if (navigator.device) {
-		navigator.device.exitApp();
+function checkConection() {
+	var networkState = navigator.connection.type;
+	if (networkState == 'Connection.NONE') {
+		navigator.notification.alert("Você está sem conexão com internet",null,"Alerta",'OK!');
+		navigator.notification.vibrate(100);
+		if (navigator.app) {
+			navigator.app.exitApp();
+		}else if (navigator.device) {
+			navigator.device.exitApp();
+		}
 	}
 }
 // function checaConexao(){
