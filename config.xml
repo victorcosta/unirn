@@ -2,7 +2,7 @@
 
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget id="com.phonegap.unirnapp" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
-	<name>UniRN App</name>
+	<name>UNI-RN</name>
 	<description>
 		Aplicativo Oficial da UniRN, por meio deste aplicativo o usuário pode obter informações sobre sua situação acadêmica e financeira, informações sobre cursos entre outras informações.
 	</description>
