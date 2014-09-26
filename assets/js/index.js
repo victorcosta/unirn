@@ -48,28 +48,80 @@ function onDeviceReady() {
 				window.localStorage.setItem("e", count_e);
 		}
 
-		$('[class^=resposta]').hide();
-
-		if ((count_a > count_b) && (count_a > count_c) && (count_a > count_d) && (count_a > count_e))
+		if ((count_a > count_b) && (count_a > count_c) && (count_a > count_d) && (count_a > count_e)){
 			$('.resposta-a').show();
-		if ((count_b > count_a) && (count_b > count_c) && (count_b > count_d) && (count_b > count_e))
+
+			$('.resposta-b').hide();
+			$('.resposta-c').hide();
+			$('.resposta-d').hide();
+			$('.resposta-e').hide();
+		}
+		if ((count_b > count_a) && (count_b > count_c) && (count_b > count_d) && (count_b > count_e)){
 			$('.resposta-b').show();
-		if ((count_c > count_a) && (count_c > count_b) && (count_c > count_d) && (count_c > count_e))
+
+			$('.resposta-a').hide();
+			$('.resposta-c').hide();
+			$('.resposta-d').hide();
+			$('.resposta-e').hide();
+		}
+		if ((count_c > count_a) && (count_c > count_b) && (count_c > count_d) && (count_c > count_e)){
 			$('.resposta-c').show();
-		if ((count_d > count_a) && (count_d > count_b) && (count_d > count_c) && (count_d > count_e))
+
+			$('.resposta-a').hide();
+			$('.resposta-b').hide();
+			$('.resposta-d').hide();
+			$('.resposta-e').hide();
+		}
+		if ((count_d > count_a) && (count_d > count_b) && (count_d > count_c) && (count_d > count_e)){
 			$('.resposta-d').show();
-		if ((count_e > count_a) && (count_e > count_b) && (count_e > count_c) && (count_e > count_d))
+
+			$('.resposta-a').hide();
+			$('.resposta-b').hide();
+			$('.resposta-c').hide();
+			$('.resposta-e').hide();
+		}
+		if ((count_e > count_a) && (count_e > count_b) && (count_e > count_c) && (count_e > count_d)){
 			$('.resposta-e').show();
 
+			$('.resposta-a').hide();
+			$('.resposta-b').hide();
+			$('.resposta-c').hide();
+			$('.resposta-d').hide();
+		}
 
-		if ((count_a = count_b) || (count_a = count_c) || (count_a = count_d) || (count_a = count_e))
+
+		if ((count_a = count_b) || (count_a = count_c) || (count_a = count_d) || (count_a = count_e)){
 			$('.resposta-a').show();
-		if ((count_b = count_c) || (count_b = count_d) || (count_b = count_e))
+
+			$('.resposta-b').hide();
+			$('.resposta-c').hide();
+			$('.resposta-d').hide();
+			$('.resposta-e').hide();
+		}
+		if ((count_b = count_c) || (count_b = count_d) || (count_b = count_e)){
 			$('.resposta-b').show();
-		if ((count_c = count_d) || (count_c = count_e))
+
+			$('.resposta-a').hide();
+			$('.resposta-c').hide();
+			$('.resposta-d').hide();
+			$('.resposta-e').hide();
+		}
+		if ((count_c = count_d) || (count_c = count_e)){
 			$('.resposta-c').show();
-		if ((count_d = count_e))
+
+			$('.resposta-a').hide();
+			$('.resposta-c').hide();
+			$('.resposta-d').hide();
+			$('.resposta-e').hide();
+		}
+		if ((count_d = count_e)){
 			$('.resposta-d').show();
+
+			$('.resposta-a').hide();
+			$('.resposta-b').hide();
+			$('.resposta-c').hide();
+			$('.resposta-e').hide();
+		}
 
 		return true;
 
