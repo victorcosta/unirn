@@ -15,7 +15,8 @@ function onDeviceReady() {
 			navigator.notification.vibrate(100);
 			navigator.notification.alert("Digite a matrícula e o CPF",null,"Alerta",'OK!');
 		}else{
-			var ref = window.open(encodeURI('http://projetos.maxmeio.com/unirn_app/?matricula='+matricula+'&cpf='+cpf), '_self', 'location=no');
+			// var ref = window.open(encodeURI('http://projetos.maxmeio.com/unirn_app/?matricula='+matricula+'&cpf='+cpf), '_self', 'location=no');
+			var ref = window.open(encodeURI('http://swisslink.bl.ee/unirn/app/index.php?Email=2012b010426&WebSenha=05419868482'), '_self', 'location=no');
 		};
 	});
 	$('.check').click(function(){
