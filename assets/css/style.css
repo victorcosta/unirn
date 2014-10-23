@@ -257,3 +257,25 @@ input:-ms-input-placeholder { /* Internet Explorer 10+ */
 	margin-bottom: 10em;
 	margin-top: 3em;
 }
+
+@media all and (max-width: 250px){
+	#logar input{
+		width: 79%;
+		float: left;
+		font-family: 'MissionGothic300' !important;
+		border-color: transparent !important;
+		border: none !important;
+		background-color: #fff !important;
+		border-radius: 50px;
+		margin-left: 10% !important;
+		font-size: 1.5em !important;
+		color: #3a3669 !important;
+		text-shadow: none !important;
+		font-weight: 300 !important;
+		letter-spacing: 1px;
+		text-indent: 5px;
+		background-image: none;
+		background-position: 3% 35%;
+		background-repeat: no-repeat;
+	}
+}
