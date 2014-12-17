@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
-<widget id="com.maxmeio.unirnapp" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.maxmeio.unirn" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0">
 	<name>UNI-RN</name>
 	<description>
 		Aplicativo Oficial da UNI-RN, por meio deste aplicativo o usuário pode obter informações sobre sua situação acadêmica e financeira, informações sobre cursos entre outras informações.
@@ -11,28 +11,39 @@
 	</author>
 	<preference name="phonegap-version" value="3.3.0" />
 	<preference name="Orientation" value="portrait" />
+
+	<!-- Android -->
+
 	<icon gap:platform="android" gap:qualifier="ldpi" src="assets/img/icon/android/icon-36-ldpi.png" />
 	<icon gap:platform="android" gap:qualifier="mdpi" src="assets/img/icon/android/icon-48-mdpi.png" />
 	<icon gap:platform="android" gap:qualifier="hdpi" src="assets/img/icon/android/icon-72-hdpi.png" />
 	<icon gap:platform="android" gap:qualifier="xhdpi" src="assets/img/icon/android/icon-96-xhdpi.png" />
-	<icon gap:platform="ios" height="57" src="assets/img/icon/ios/icon-57.png" width="57" />
-	<icon gap:platform="ios" height="72" src="assets/img/icon/ios/icon-72.png" width="72" />
-	<icon gap:platform="ios" height="114" src="assets/img/icon/ios/icon-57-2x.png" width="114" />
-	<icon gap:platform="ios" height="144" src="assets/img/icon/ios/icon-72-2x.png" width="144" />
-	<icon gap:platform="webos" src="assets/img/icon/webos/icon-64.png" />
-	<icon gap:platform="winphone" src="assets/img/icon/android/icon-48-mdpi.png" />
-	<icon gap:platform="winphone" gap:role="background" src="assets/img/icon/windows-phone/icon-173.png" />
 
-	<!-- Define app splash screen for each platform. -->
 	<gap:splash src="assets/img/screen/android/screen-ldpi-portrait.png"    gap:platform="android"      gap:density="ldpi"        />
 	<gap:splash src="assets/img/screen/android/screen-mdpi-portrait.png"    gap:platform="android"      gap:density="mdpi"        />
 	<gap:splash src="assets/img/screen/android/screen-hdpi-portrait.png"    gap:platform="android"      gap:density="hdpi"        />
 	<gap:splash src="assets/img/screen/android/screen-xhdpi-portrait.png"   gap:platform="android"      gap:density="xhdpi"       />
-	<gap:splash src="assets/img/screen/ios/screen-iphone-portrait.png"      gap:platform="ios"          width="320" height="480"  />
-	<gap:splash src="assets/img/screen/ios/screen-iphone-portrait-2x.png"   gap:platform="ios"          width="640" height="960"  />
-	<gap:splash src="assets/img/screen/ios/screen-ipad-portrait.png"        gap:platform="ios"          width="768" height="1024" />
-	<gap:splash src="assets/img/screen/ios/screen-ipad-landscape.png"       gap:platform="ios"          width="1024" height="768" />
+
+	<!-- IOS -->
+
+	<icon gap:platform="ios" height="57" src="assets/img/icon/ios/icon-57.png" width="57" />
+	<icon gap:platform="ios" height="72" src="assets/img/icon/ios/icon-72.png" width="72" />
+	<icon gap:platform="ios" height="114" src="assets/img/icon/ios/icon-57-2x.png" width="114" />
+	<icon gap:platform="ios" height="144" src="assets/img/icon/ios/icon-72-2x.png" width="144" />
+
+	<gap:splash src="assets/img/screen/ios/screen-iphone-portrait.png"         gap:platform="ios"          width="320" height="480"  />
+	<gap:splash src="assets/img/screen/ios/screen-iphone-portrait-2x.png"      gap:platform="ios"          width="640" height="960"  />
+	<gap:splash src="assets/img/screen/ios/screen-iphone-portrait-568h-2x.png" gap:platform="ios"     width="640"  height="1136" />
+	<gap:splash src="assets/img/screen/ios/screen-ipad-portrait.png"           gap:platform="ios"          width="768" height="1024" />
+	<gap:splash src="assets/img/screen/ios/screen-ipad-landscape.png"          gap:platform="ios"          width="1024" height="768" />
+
+	<!-- Define app splash screen for each platform. -->
+
+	<icon gap:platform="webos" src="assets/img/icon/webos/icon-64.png" />
+	<icon gap:platform="winphone" src="assets/img/icon/android/icon-48-mdpi.png" />
+	<icon gap:platform="winphone" gap:role="background" src="assets/img/icon/windows-phone/icon-173.png" />
 	<gap:splash src="assets/img/screen/windows-phone/screen-portrait.jpg"   gap:platform="winphone"                               />
+
 	<plugin name="InAppBrowser" value="CDVInAppBrowser" />
 	<plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
 	<plugin name="Notification" value="org.apache.cordova.Notification"/>
