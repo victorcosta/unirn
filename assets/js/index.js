@@ -8,6 +8,38 @@ function onDeviceReady() {
 	window.localStorage.setItem("c", 0);
 	window.localStorage.setItem("d", 0);
 	window.localStorage.setItem("e", 0);
+
+	/*Inicio Telefones*/
+	$("#reitoria").click(			function() { window.open('tel:32152989', '_system'); });
+	$("#comunicacao").click(		function() { window.open('tel:32152991', '_system'); });
+	$("#centralAtendimento").click(	function() { window.open('tel:32152939', '_system'); });
+	$("#coordenacoes").click(		function() { window.open('tel:32152936', '_system'); });
+	$("#direito").click(			function() { window.open('tel:32152937', '_system'); });
+	$("#psicologia").click(			function() { window.open('tel:32152940', '_system'); });
+	$("#enfermagem").click(			function() { window.open('tel:32152979', '_system'); });
+	$("#redes").click(				function() { window.open('tel:32152934', '_system'); });
+	$("#edfisica").click(			function() { window.open('tel:32152949', '_system'); });
+	$("#fisioterapia").click(		function() { window.open('tel:32152951', '_system'); });
+	$("#administracao").click(		function() { window.open('tel:32152935', '_system'); });
+	$("#nutricao").click(			function() { window.open('tel:32152946', '_system'); });
+	$("#engenharia").click(			function() { window.open('tel:32152961', '_system'); });
+	$("#biblioteca").click(			function() { window.open('tel:32152926', '_system'); });
+	$("#financeiro").click(			function() { window.open('tel:32152919', '_system'); });
+	$("#pos").click(				function() { window.open('tel:32152973', '_system'); });
+	$("#controleacademico").click(	function() { window.open('tel:32152903', '_system'); });
+	$("#informatica").click(		function() { window.open('tel:32152929', '_system'); });
+	$("#ava").click(				function() { window.open('tel:32152974', '_system'); });
+	$("#fies").click(				function() { window.open('tel:32152998', '_system'); });
+	$("#estagios").click(			function() { window.open('tel:32152977', '_system'); });
+	$("#carreira").click(			function() { window.open('tel:32152970', '_system'); });
+	$("#extensao").click(			function() { window.open('tel:32152925', '_system'); });
+	$("#prefeitura").click(			function() { window.open('tel:32152938', '_system'); });
+	$("#callcenter").click(			function() { window.open('tel:32152917', '_system'); });
+	$("#clinicas").click(			function() { window.open('tel:32152960', '_system'); });
+	$("#juridica").click(			function() { window.open('tel:32152890', '_system'); });
+
+	/*Fim Telefones*/
+
 	$("#btn-acessar").click(function(event) {
 		var matricula 	= $('#matricula').val();
 		var cpf 		= $('#cpf').val();

@@ -124,6 +124,11 @@
 	background-position: 3%;
 	background-repeat: no-repeat;
 }
+.telefones{
+	background-image: url("../img/telefone.jpg");
+	background-position: 3% ;
+	background-repeat: no-repeat;
+}
 #maps {
   width: 100%;
 }
