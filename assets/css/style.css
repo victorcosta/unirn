@@ -24,12 +24,12 @@
 
 .ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper{
 	background: url("../img/bg.jpg");
-	background-position: center center;
-	background-attachment:fixed;
+	background-position: top center;
+	background-attachment: fixed;
 }
 .ui-header {
 	background: url("../img/bg-header.jpg");
-	background-attachment:fixed;
+	background-attachment: fixed;
 	height: 5em;
 	overflow: hidden;
 }
