@@ -2,7 +2,7 @@
 
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
 <widget id="com.maxmeio.unirn" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
-<!-- <widget id="com.maxmeio.unirnapp" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0"> -->
+	<!-- <widget id="com.maxmeio.unirnapp" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0"> -->
 	<name>UNIRN</name>
 	<description>
 		Aplicativo Oficial da UNI-RN, por meio deste aplicativo o usuário pode obter informações sobre sua situação acadêmica e financeira, informações sobre cursos entre outras informações.
@@ -51,6 +51,7 @@
 	<gap:plugin name="org.apache.cordova.vibration" version="0.3.7" />
 	<gap:plugin name="org.apache.cordova.dialogs" />
 	<gap:plugin name="org.apache.cordova.network-information" />
+	<gap:plugin name="org.apache.cordova.device" version="0.2.8" />
 	<gap:plugin name="com.phonegap.plugins.pushplugin" version="2.1.1" />
 
 

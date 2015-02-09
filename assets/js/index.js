@@ -56,7 +56,7 @@ function onDeviceReady() {
 
 	try {
 		pushNotification = window.plugins.pushNotification;
-		if (navigator.device.platform == 'android' || navigator.device.platform == 'Android') {
+		if (device.platform == 'android' || device.platform == 'Android') {
 			pushNotification.register(successHandler, errorHandler, {"senderID":"510667245122","ecb":"onNotificationGCM"});		// required!
 		} else {
 			pushNotification.register(tokenHandler, errorHandler, {"badge":"true","sound":"true","alert":"true","ecb":"onNotificationAPN"});	// required!
