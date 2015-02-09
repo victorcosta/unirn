@@ -29,6 +29,7 @@
 }
 .ui-header {
 	background: url("../img/bg-header.jpg");
+	background-attachment:fixed;
 	height: 5em;
 	overflow: hidden;
 }

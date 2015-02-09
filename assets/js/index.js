@@ -42,17 +42,6 @@ function onDeviceReady() {
 
 
 	/*Notificações*/
-	// document.addEventListener("backbutton", function(e) {
-	//    // alert('backbutton event received');
-	// 	if( $("#page1").length > 0){
-	// 		// call this to get a new token each time. don't call it to reuse existing token.
-	// 		//pushNotification.unregister(successHandler, errorHandler);
-	// 		e.preventDefault();
-	// 		navigator.app.exitApp();
-	// 	}else{
-	// 		navigator.app.backHistory();
-	// 	}
-	// }, false);
 
 	try {
 		pushNotification = window.plugins.pushNotification;
