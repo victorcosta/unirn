@@ -242,6 +242,7 @@ function onNotificationAPN(e) {
 }
 // handle GCM notifications for Android
 function onNotificationGCM(e) {
+	alert(e.event);
 	switch( e.event )
 	{
 		case 'registered':
@@ -250,6 +251,7 @@ function onNotificationGCM(e) {
 			// $("#app-status-ul").append('<li>REGISTERED -> REGID:' + e.regid + "</li>");
 			// Your GCM push server needs to know the regID before it can push to this device
 			// here is where you might want to send it the regID for later use.
+			alert("Registered");
 			console.log("regID = " + e.regid);
 			$.ajax({
 				url:'http://maxmeio.mine.nu/cnt/unirn/servidorpush/add.php?key='+e.regid,
@@ -260,6 +262,7 @@ function onNotificationGCM(e) {
 				},
 				timeout:60000,
 				success:function(data){
+					alert("OK");
 					// $("#app-status-ul").append('<li>response :' + data.success + "</li>");
 				}
 			});
