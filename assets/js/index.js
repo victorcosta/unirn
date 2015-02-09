@@ -43,7 +43,7 @@ function onDeviceReady() {
 
 	/*Notificações*/
 	document.addEventListener("backbutton", function(e) {
-	   alert('backbutton event received');
+	   // alert('backbutton event received');
 		if( $("#page1").length > 0){
 			// call this to get a new token each time. don't call it to reuse existing token.
 			//pushNotification.unregister(successHandler, errorHandler);
@@ -288,7 +288,7 @@ function tokenHandler (result) {
 	// here is where you might want to send it the token for later use.
 }
 function successHandler (result) {
-	alert(result);
+	console.log(result);
 	// $("#app-status-ul").append('<li>success:'+ result +'</li>');
 }
 function errorHandler (error) {
