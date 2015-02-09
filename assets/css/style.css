@@ -23,10 +23,13 @@
 
 
 .ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper{
-	background: url("../img/bg.jpg") center center fixed;
+	background: url("../img/bg.jpg") ;
+	background-position: top center;
+	background-attachment: fixed !important;
 }
 .ui-header {
 	background: url("../img/bg-header.jpg");
+	background-attachment: fixed;
 	height: 5em;
 	overflow: hidden;
 }
