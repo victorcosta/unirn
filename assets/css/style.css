@@ -1,20 +1,36 @@
 @font-face{
-    font-family:'MissionGothic400';
-    src:url("../fonts/Mission_Gothic_Regular.woff");
+	font-family:'MissionGothic400';
+	src:url("../fonts/Mission_Gothic_Regular.woff");
 }
 @font-face{
-    font-family:'MissionGothic300';
-    src:url("../fonts/Mission_Gothic_Light.woff");
+	font-family:'MissionGothic300';
+	src:url("../fonts/Mission_Gothic_Light.woff");
 }
+
+.ui-checkbox label.ui-btn{
+	width: 73%;
+	float: left;
+	position: relative;
+	background: none !important;
+	border-radius: 50px;
+	color: #3a3669!important;
+	margin-left: 10%!important;
+	text-indent: 12%;
+}
+#save{
+	display: none;
+}
+
 
 .ui-overlay-a, .ui-page-theme-a, .ui-page-theme-a .ui-panel-wrapper{
 	background: url("../img/bg.jpg");
 	background-position: center center;
+	background-attachment:fixed;
 }
 .ui-header {
-    background: url("../img/bg-header.jpg");
-    height: 5em;
-    overflow: hidden;
+	background: url("../img/bg-header.jpg");
+	height: 5em;
+	overflow: hidden;
 }
 .ui-header h1{
 	font-family:'MissionGothic300', sans-serif;
@@ -25,7 +41,8 @@
 	text-shadow: none !important;
 }
 .ui-footer {
-  background: #cccccc; }
+	background: #cccccc; 
+}
 .ui-page-theme-a{
 	background-color: transparent !important;
 }
@@ -130,7 +147,7 @@
 	background-repeat: no-repeat;
 }
 #maps {
-  width: 100%;
+	width: 100%;
 }
 #block{
 	width:80px; height: 80px; background:red;
@@ -153,7 +170,7 @@
 		font-size: 1.2em !important;
 	}
 	.ui-header {
-    height: 3em;
+		height: 3em;
 	}
 	.ui-header .ui-btn-icon-notext {
 		margin-top: 2% !important;
@@ -206,11 +223,12 @@
 	color: #3a3669 !important;
 	text-shadow: none !important;
 	font-weight: 300 !important;
-	letter-spacing: 1.2px;
+	letter-spacing: 0px;
 	text-indent: 75px;
 	background-image: url("../img/cadeado.jpg");
 	background-position: 3% 35%;
 	background-repeat: no-repeat;
+	font-size: 1.4em !important;
 }
 .ui-page-theme-a .ui-body-inherit{
 	border: none !important;
@@ -244,16 +262,16 @@
 }
 
 input::-webkit-input-placeholder { /* WebKit browsers */
-  color: #3a3669  !important;
+	color: #3a3669  !important;
 }
 input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
-  color: #3a3669  !important;
+	color: #3a3669  !important;
 }
 input::-moz-placeholder { /* Mozilla Firefox 19+ */
-  color: #3a3669  !important;
+	color: #3a3669  !important;
 }
 input:-ms-input-placeholder { /* Internet Explorer 10+ */
-  color: #3a3669  !important;
+	color: #3a3669  !important;
 }
 
 /************************ LOGADO ********************/
