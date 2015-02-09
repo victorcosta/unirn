@@ -1,5 +1,3 @@
-document.addEventListener('deviceready', onDeviceReady, true);
-document.addEventListener("offline", onOffLine, false);
 
 var pushNotification;
 
@@ -44,6 +42,17 @@ function onDeviceReady() {
 
 
 	/*Notificações*/
+	document.addEventListener("backbutton", function(e) {
+	   alert('backbutton event received');
+		if( $("#page1").length > 0){
+			// call this to get a new token each time. don't call it to reuse existing token.
+			//pushNotification.unregister(successHandler, errorHandler);
+			e.preventDefault();
+			navigator.app.exitApp();
+		}else{
+			navigator.app.backHistory();
+		}
+	}, false);
 
 	try {
 		pushNotification = window.plugins.pushNotification;
@@ -272,14 +281,18 @@ function onNotificationGCM(e) {
 	}
 }
 function tokenHandler (result) {
+	alert(result);
 	// $("#app-status-ul").append('<li>token: '+ result +'</li>');
 	// Your iOS push server needs to know the token before it can push to this device
 	// here is where you might want to send it the token for later use.
 }
 function successHandler (result) {
+	alert(result);
 	// $("#app-status-ul").append('<li>success:'+ result +'</li>');
 }
 function errorHandler (error) {
+	alert(error);
 	// $("#app-status-ul").append('<li>error:'+ error +'</li>');
 }
-// document.addEventListener('deviceready', onDeviceReady, true);
+document.addEventListener('deviceready', onDeviceReady, true);
+document.addEventListener("offline", onOffLine, false);
