@@ -1,7 +1,7 @@
 
-var pushNotification;
 
 function onDeviceReady() {
+	var pushNotification;
 	// window.localStorage.clear();
 	window.localStorage.setItem("a", 0);
 	window.localStorage.setItem("b", 0);
