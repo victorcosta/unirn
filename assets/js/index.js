@@ -242,7 +242,6 @@ function onNotificationAPN(e) {
 }
 // handle GCM notifications for Android
 function onNotificationGCM(e) {
-	alert(e.event);
 	switch( e.event )
 	{
 		case 'registered':
@@ -262,7 +261,7 @@ function onNotificationGCM(e) {
 				},
 				timeout:60000,
 				success:function(data){
-					alert("OK");
+					alert("Save");
 					// $("#app-status-ul").append('<li>response :' + data.success + "</li>");
 				}
 			});
