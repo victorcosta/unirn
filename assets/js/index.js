@@ -55,6 +55,11 @@ function onDeviceReady() {
 		txt+="Error description: " + err.message + "\n\n";
 		alert(txt);
 	}
+	try{
+		if(device.){
+
+		}
+	}
 	/*Fim Notificações*/
 
 	$("#all").click(function() {

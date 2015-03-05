@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
-<widget id="com.maxmeio.unirn" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
+<widget id="com.maxmeio.unirn" version="0.0.3" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
 	<!-- <widget id="com.maxmeio.unirnapp" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0"> -->
 	<name>UNIRN</name>
 	<description>
@@ -11,7 +11,7 @@
 		Victor Costa
 	</author>
 	<preference name="phonegap-version" value="3.6.3" />
-	<preference name="Orientation" value="portrait" />
+	<preference name="orientation" value="portrait" />
 
 	<!-- Android -->
 
@@ -32,18 +32,14 @@
 	<icon gap:platform="ios" height="114" src="assets/img/icon/ios/icon-57-2x.png" width="114" />
 	<icon gap:platform="ios" height="144" src="assets/img/icon/ios/icon-72-2x.png" width="144" />
 
-	<gap:splash src="assets/img/screen/ios/screen-iphone-portrait.png"         gap:platform="ios"          width="320" height="480"  />
-	<gap:splash src="assets/img/screen/ios/screen-iphone-portrait-2x.png"      gap:platform="ios"          width="640" height="960"  />
-	<gap:splash src="assets/img/screen/ios/screen-iphone-portrait-568h-2x.png" gap:platform="ios"  		   width="640"  height="1136" />
-	<gap:splash src="assets/img/screen/ios/screen-ipad-portrait.png"           gap:platform="ios"          width="768" height="1024" />
-	<gap:splash src="assets/img/screen/ios/screen-ipad-landscape.png"          gap:platform="ios"          width="1024" height="768" />
+	<gap:splash src="assets/img/screen/ios/screen-iphone-portrait.png"         gap:platform="ios"  width="320"  height="480"  />
+	<gap:splash src="assets/img/screen/ios/screen-iphone-portrait-2x.png"      gap:platform="ios"  width="640"  height="960"  />
+	<gap:splash src="assets/img/screen/ios/screen-iphone-portrait-568h-2x.png" gap:platform="ios"  width="640"  height="1136" />
+	<gap:splash src="assets/img/screen/ios/screen-ipad-portrait.png"           gap:platform="ios"  width="768"  height="1024" />
+	<gap:splash src="assets/img/screen/ios/screen-ipad-landscape.png"          gap:platform="ios"  width="1024" height="768" />
 
 	<!-- Define app splash screen for each platform. -->
 
-	<icon gap:platform="webos" src="assets/img/icon/webos/icon-64.png" />
-	<icon gap:platform="winphone" src="assets/img/icon/android/icon-48-mdpi.png" />
-	<icon gap:platform="winphone" gap:role="background" src="assets/img/icon/windows-phone/icon-173.png" />
-	<gap:splash src="assets/img/screen/windows-phone/screen-portrait.jpg"   gap:platform="winphone"                               />
 
 	<plugin name="InAppBrowser" value="CDVInAppBrowser" />
 	<plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
@@ -53,7 +49,6 @@
 	<gap:plugin name="org.apache.cordova.network-information" />
 	<gap:plugin name="org.apache.cordova.device" version="0.2.8" />
 	<gap:plugin name="com.phonegap.plugins.pushplugin" version="2.1.1" />
-
 
 	<access origin="*" />
 </widget>
