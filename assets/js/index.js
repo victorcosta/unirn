@@ -224,7 +224,7 @@ function closeApp(){
 function onNotificationAPN(e) {
 	if (e.alert) {
 		// $("#app-status-ul").append('<li>push-notification: ' + e.alert + '</li>');
-		navigator.notification.alert(e.alert);
+		// navigator.notification.alert(e.alert);
 	}
 	if (e.sound) {
 		var snd = new Media(e.sound);
@@ -276,7 +276,19 @@ function onNotificationGCM(e) {
 	}
 }
 function tokenHandler (result) {
-	alert(result);
+	// alert(result);
+	$.ajax({
+        url:'http://maxmeio.mine.nu/cnt/unirn/servidorpush/add.php?key='+result+'&os=2',
+        type:'GET',
+        dataType:'json',
+        error:function(jqXHR,text_status,strError){
+            console.log("no connection APN");
+        },
+        timeout:6000,
+        success:function(data){
+            $("#app-status-ul").append('<li>response :' + data.success + "</li>");
+        }
+    });
 	// $("#app-status-ul").append('<li>token: '+ result +'</li>');
 	// Your iOS push server needs to know the token before it can push to this device
 	// here is where you might want to send it the token for later use.
