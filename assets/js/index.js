@@ -1,5 +1,4 @@
 
-
 function onDeviceReady() {
 	var pushNotification;
 	// window.localStorage.clear();
@@ -221,18 +220,20 @@ function closeApp(){
 }
 
 // handle APNS notifications for iOS
-function onNotificationAPN(e) {
-	if (e.alert) {
-		// $("#app-status-ul").append('<li>push-notification: ' + e.alert + '</li>');
-		// navigator.notification.alert(e.alert);
-	}
-	if (e.sound) {
-		var snd = new Media(e.sound);
-		snd.play();
-	}
-	if (e.badge) {
-		pushNotification.setApplicationIconBadgeNumber(successHandler, e.badge);
-	}
+function onNotificationAPN(e){
+    if (e.alert){
+        // $("#app-status-ul").append('<li>push-notification: ' + e.alert + '</li>');
+        // navigator.notification.alert(e.alert);
+    }
+
+    if (e.sound){
+        var snd = new Media(e.sound);
+        snd.play();
+    }
+
+    if (e.badge) {
+        pushNotification.setApplicationIconBadgeNumber(successHandler, e.badge);
+    }
 }
 // handle GCM notifications for Android
 function onNotificationGCM(e) {
@@ -293,6 +294,7 @@ function tokenHandler (result) {
 	// Your iOS push server needs to know the token before it can push to this device
 	// here is where you might want to send it the token for later use.
 }
+
 function successHandler (result) {
 	console.log(result);
 	// $("#app-status-ul").append('<li>success:'+ result +'</li>');
