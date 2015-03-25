@@ -36,9 +36,7 @@ function onDeviceReady() {
 	$("#callcenter").click(			function() { window.open('tel:8432152917', '_system'); });
 	$("#clinicas").click(			function() { window.open('tel:8432152960', '_system'); });
 	$("#juridica").click(			function() { window.open('tel:8432152890', '_system'); });
-
 	/*Fim Telefones*/
-
 
 	/*Notificações*/
 
@@ -59,6 +57,7 @@ function onDeviceReady() {
 
 	// 	}
 	// }
+
 	/*Fim Notificações*/
 
 	$("#all").click(function() {
@@ -70,7 +69,6 @@ function onDeviceReady() {
 			$('#cpf').val(cpf);
 		};
 	});
-
 	$("#btn-acessar").click(function(event) {
 		var notSave 	= $('#save').attr('data-cacheval');
 		var matricula 	= $('#matricula').val();
@@ -120,7 +118,6 @@ function onDeviceReady() {
 			count_e	= count_e + 1;
 			window.localStorage.setItem("e", count_e);
 		}
-
 		if ((count_a > count_b) && (count_a > count_c) && (count_a > count_d) && (count_a > count_e)){
 			$('.resposta-a').show();
 
@@ -161,8 +158,6 @@ function onDeviceReady() {
 			$('.resposta-c').hide();
 			$('.resposta-d').hide();
 		}
-
-
 		if ((count_a = count_b) || (count_a = count_c) || (count_a = count_d) || (count_a = count_e)){
 			$('.resposta-a').show();
 
@@ -218,30 +213,25 @@ function closeApp(){
 		navigator.device.exitApp();
 	}
 }
-
 // handle APNS notifications for iOS
 function onNotificationAPN(e){
     if (e.alert){
         // $("#app-status-ul").append('<li>push-notification: ' + e.alert + '</li>');
         // navigator.notification.alert(e.alert);
     }
-
     if (e.sound){
         var snd = new Media(e.sound);
         snd.play();
     }
-
     if (e.badge) {
         pushNotification.setApplicationIconBadgeNumber(successHandler, e.badge);
     }
 }
 // handle GCM notifications for Android
 function onNotificationGCM(e) {
-	switch( e.event )
-	{
+	switch( e.event ){
 		case 'registered':
-		if ( e.regid.length > 0 )
-		{
+		if ( e.regid.length > 0 ){
 			// $("#app-status-ul").append('<li>REGISTERED -> REGID:' + e.regid + "</li>");
 			// Your GCM push server needs to know the regID before it can push to this device
 			// here is where you might want to send it the regID for later use.
@@ -294,7 +284,6 @@ function tokenHandler (result) {
 	// Your iOS push server needs to know the token before it can push to this device
 	// here is where you might want to send it the token for later use.
 }
-
 function successHandler (result) {
 	console.log(result);
 	// $("#app-status-ul").append('<li>success:'+ result +'</li>');
