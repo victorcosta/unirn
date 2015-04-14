@@ -237,7 +237,7 @@ function onNotificationGCM(e) {
 			// here is where you might want to send it the regID for later use.
 			console.log("regID = " + e.regid);
 			$.ajax({
-				url:'http://maxmeio.mine.nu/cnt/unirn/servidorpush/add.php?key='+e.regid,
+				url:'http://maxmeio.mine.nu/cnt/unirn/servidorpush/add.php?key='+e.regid+'os=1',
 				type:'GET',
 				dataType:'json',
 				error:function(jqXHR,text_status,strError){
