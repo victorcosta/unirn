@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <!-- config.xml reference: https://build.phonegap.com/docs/config-xml -->
-<widget id="com.maxmeio.unirnapp" version="0.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
-	<!-- <widget id="com.maxmeio.unirnapp" version="0.0.2" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0"> -->
+<widget id="com.maxmeio.unirn" version="0.0.5" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0"> <!-- IOS-->
+ <!-- <widget id="com.maxmeio.unirnapp" version="0.0.4" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0"> <!-- Android-->
 	<name>UNIRN</name>
 	<description>
 		Aplicativo Oficial da UNI-RN, por meio deste aplicativo o usuário pode obter informações sobre sua situação acadêmica e financeira, informações sobre cursos entre outras informações.
@@ -37,6 +37,7 @@
 	<gap:splash src="assets/img/screen/ios/screen-iphone-portrait-568h-2x.png" gap:platform="ios"  width="640"  height="1136" />
 	<gap:splash src="assets/img/screen/ios/screen-ipad-portrait.png"           gap:platform="ios"  width="768"  height="1024" />
 	<gap:splash src="assets/img/screen/ios/screen-ipad-landscape.png"          gap:platform="ios"  width="1024" height="768" />
+
 
 	<!-- Define app splash screen for each platform. -->
 

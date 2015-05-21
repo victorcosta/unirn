@@ -50,7 +50,7 @@ function onDeviceReady() {
 	}catch(err) {
 		txt="There was an error on this page.\n\n";
 		txt+="Error description: " + err.message + "\n\n";
-		alert(txt);
+		//alert(txt);
 	}
 	// try{
 	// 	if(device.){
@@ -289,7 +289,7 @@ function successHandler (result) {
 	// $("#app-status-ul").append('<li>success:'+ result +'</li>');
 }
 function errorHandler (error) {
-	alert(error);
+	// alert(error);
 	// $("#app-status-ul").append('<li>error:'+ error +'</li>');
 }
 document.addEventListener('deviceready', onDeviceReady, true);
